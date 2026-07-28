@@ -369,10 +369,21 @@ h1, h2, h3 {
 }
 
 .tile-value small {
-  font-size: 14px;
+  display: block;
+  font-size: 13px;
   color: var(--text-white);
-  font-family: var(--font-body);
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .tile-value small {
+    display: inline;
+    margin-left: 4px;
+    margin-top: 0;
+  }
 }
 
 .hero-cta {
