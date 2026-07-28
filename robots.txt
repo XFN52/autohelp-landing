@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /__404$
-Disallow: /sitesearch.html$
-Disallow: /sitesearch
-Disallow: /html/
-Disallow: /widgets/
-
-Sitemap: https://mechanic52.ru/sitemap.xml
