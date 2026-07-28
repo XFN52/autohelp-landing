@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTOHELP24 — Техпомощь на дорогах Вашего Города 24/7 | Приедем от 10 минут</title>
+  <meta name="description" content="Экстренная автопомощь в Вашем Городе, на городским и региональным трассам. Отогрев авто, прикурить АКБ 12/24V, выездной шиномонтаж, эвакуатор. Оплата после работы!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AUTOHELP24 — Срочная техпомощь на дорогах 24/7">
+  <meta property="og:description" content="Приедем за 10 минут и заведём машину на месте. Ваш Город, трассы М-7 и ОБЛАСТЬ.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="uploads/s/e/3/j/e3j8sdg8k6go/img/full_4sw4ThdJ.jpg">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Industrial Typography Google Fonts: Oswald for H1-H3 headers -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=20">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "AutoHelp24",
+    "image": "https://example.com/uploads/s/e/3/j/e3j8sdg8k6go/img/full_4sw4ThdJ.jpg",
+    "telephone": "+70000000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Центральная, 1",
+      "addressLocality": "Ваш Город",
+      "addressRegion": "Ваша Область",
+      "addressCountry": "RU"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "990 - 3000 RUB"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- 0. Прилипшая полоса звонка (Мобильные, position: fixed, bottom: 0, height: 64px) -->
+  <a href="tel:+70000000000" class="sticky-call-bar" aria-label="Позвонить в техпомощь">
+    <svg class="phone-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+    <span class="sticky-call-text">ПОЗВОНИТЬ +7 (000) 000-00-00</span>
+  </a>
+
+  <!-- 1. Шапка (Компактная, 56-64px) -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo-text">AUTOHELP24</a>
+        <span class="logo-sub">техпомощь на дорогах 24/7</span>
+      </div>
+      <div class="header-phone-block">
+        <a href="tel:+70000000000" class="header-phone-link">+7 (000) 000-00-00</a>
+        <span class="header-phone-sub">звонок бесплатный</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Первый экран (Герой) -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <h1 class="hero-title">ПРИЕДЕМ ЗА 10 МИНУТ<br>И ЗАВЕДЁМ МАШИНУ НА МЕСТЕ</h1>
+        <p class="hero-subtitle">Ваш Город, Город и Область · круглосуточно · без выходных</p>
+        
+        <!-- Три плитки времени прибытия -->
+        <div class="arrival-tiles">
+          <div class="tile">
+            <span class="tile-label">ПО ГОРОДУ</span>
+            <span class="tile-value">от 10<small> мин</small></span>
+          </div>
+          <div class="tile">
+            <span class="tile-label">ТРАССА</span>
+            <span class="tile-value">от 15<small> мин</small></span>
+          </div>
+          <div class="tile">
+            <span class="tile-label">ОБЛАСТЬ</span>
+            <span class="tile-value">от 20<small> мин</small></span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="tel:+70000000000" class="btn btn-primary">ПОЗВОНИТЬ МЕХАНИКУ</a>
+          <span class="hero-cta-note">ответим за 20 секунд, оплата после работы</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Полоса «Что делать прямо сейчас» (Симптомы) -->
+    <section class="symptoms-section">
+      <div class="container">
+        <div class="symptoms-bar">
+          <a href="#service-electric" class="symptom-item">
+            <svg class="symptom-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="12" rx="2" ry="2"/><line x1="22" y1="11" x2="22" y2="15"/><line x1="6" y1="13" x2="10" y2="13"/><line x1="8" y1="11" x2="8" y2="15"/></svg>
+            <span class="symptom-text">не заводится</span>
+          </a>
+          <a href="#service-tire" class="symptom-item">
+            <svg class="symptom-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6m0 6v6m9-9h-6m-6 0H3"/></svg>
+            <span class="symptom-text">пробил колесо</span>
+          </a>
+          <a href="#service-repair" class="symptom-item">
+            <svg class="symptom-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span class="symptom-text">сломался</span>
+          </a>
+          <a href="#service-freeze" class="symptom-item">
+            <svg class="symptom-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="20" y1="12" x2="4" y2="12"/><line x1="17.66" y1="6.34" x2="6.34" y2="17.66"/><line x1="17.66" y1="17.66" x2="6.34" y2="6.34"/></svg>
+            <span class="symptom-text">замёрз</span>
+          </a>
+          <a href="#service-tow" class="symptom-item">
+            <svg class="symptom-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span class="symptom-text">нужен эвакуатор</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Услуги (5 карточек) -->
+    <section class="services-section">
+      <div class="container">
+        <h2 class="section-title">УСЛУГИ И ЦЕНЫ</h2>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card" id="service-repair">
+            <div class="service-img-wrap">
+              <img src="uploads/s/e/3/j/e3j8sdg8k6go/img/full_4sw4ThdJ.jpg" alt="Выездной ремонт авто" width="600" height="400">
+              <div class="service-price"><small>от</small> 990 ₽</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Выездной ремонт авто</h3>
+              <p class="service-desc">Слесарные работы и автоэлектрика с выездом на место поломки.</p>
+              <a href="tel:+70000000000" class="btn btn-card">Вызвать</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card" id="service-tire">
+            <div class="service-img-wrap">
+              <img src="uploads/s/e/3/j/e3j8sdg8k6go/img/full_zxWaxl1a.jpg" alt="Выездной шиномонтаж" width="600" height="400" loading="lazy">
+              <div class="service-price"><small>от</small> 1 190 ₽</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Выездной шиномонтаж</h3>
+              <p class="service-desc">Заменим или отремонтируем колесо на месте, при критическом повреждении отвезём на восстановление.</p>
+              <a href="tel:+70000000000" class="btn btn-card">Вызвать</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card" id="service-electric">
+            <div class="service-img-wrap">
+              <img src="uploads/s/e/3/j/e3j8sdg8k6go/img/full_04MPI6oZ.jpg" alt="Запуск двигателя 12/24V" width="600" height="400" loading="lazy">
+              <div class="service-price"><small>от</small> 990 ₽</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Запуск двигателя 12/24V</h3>
+              <p class="service-desc">Профессиональное пусковое оборудование, гарантия запуска.</p>
+              <a href="tel:+70000000000" class="btn btn-card">Вызвать</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card" id="service-freeze">
+            <div class="service-img-wrap">
+              <img src="uploads/s/e/3/j/e3j8sdg8k6go/img/full_Ds4mnj4G.jpg" alt="Отогрев авто зимой" width="600" height="400" loading="lazy">
+              <div class="service-price"><small>от</small> 1 990 ₽</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Отогрев авто зимой</h3>
+              <p class="service-desc">Отогреем топливо, баки, двигатель, воздушные магистрали и выхлопную систему.</p>
+              <a href="tel:+70000000000" class="btn btn-card">Вызвать</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card" id="service-tow">
+            <div class="service-img-wrap">
+              <img src="uploads/s/e/3/j/e3j8sdg8k6go/img/full_SX6ms88T.jpg" alt="Услуги эвакуатора" width="600" height="400" loading="lazy">
+              <div class="service-price"><small>от</small> 2 990 ₽</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-name">Услуги эвакуатора</h3>
+              <p class="service-desc">Быстрый выезд, собственный автопарк.</p>
+              <a href="tel:+70000000000" class="btn btn-card">Вызвать</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="services-footer-note">
+          Работаем с легковыми авто, кроссоверами, внедорожниками и малым коммерческим транспортом.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Как это работает (4 шага) -->
+    <section class="steps-section">
+      <div class="container">
+        <h2 class="section-title">КАК ЭТО РАБОТАЕТ</h2>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-title">Звоните</div>
+            <div class="step-desc">Набираете номер или нажимаете кнопку вызова</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-title">Говорите что и где</div>
+            <div class="step-desc">Описываете проблему и местоположение</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-title">Механик выезжает</div>
+            <div class="step-desc">Ближайший экипаж направляется к вам</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <div class="step-title">Платите после работы</div>
+            <div class="step-desc">Наличные, карта или перевод — как удобно</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Зона выезда -->
+    <section class="coverage-section">
+      <div class="container">
+        <h2 class="section-title">РАБОТАЕМ ПО ВСЕМУ РЕГИОНУ И ТРАССАМ</h2>
+        
+        <div class="coverage-grid">
+          <div class="coverage-item">Ваш Город</div>
+          <div class="coverage-item">Северный район</div>
+          <div class="coverage-item">Восточный район</div>
+          <div class="coverage-item">Южный район</div>
+          <div class="coverage-item">Западный район</div>
+          <div class="coverage-item">Пригород</div>
+          <div class="coverage-item">Трасса А-1</div>
+          <div class="coverage-item">Скоростная трасса</div>
+          <div class="coverage-item">Трасса Р-1</div>
+          <div class="coverage-item">Трасса Р-2</div>
+        </div>
+
+        <p class="coverage-note">
+          Не нашли свой участок? Звоните — скажем, доедем или нет. <span>(Дальше 80 км от города — по договорённости)</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. Оплата и гарантии -->
+    <section class="guarantees-section">
+      <div class="container">
+        <div class="guarantees-grid">
+          <div class="guarantee-item">
+            <span class="g-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="g-text">Оплата после работы</span>
+          </div>
+          <div class="guarantee-item">
+            <span class="g-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="g-text">Наличные, карта, перевод</span>
+          </div>
+          <div class="guarantee-item">
+            <span class="g-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="g-text">Чек</span>
+          </div>
+          <div class="guarantee-item">
+            <span class="g-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span class="g-text">Цена не меняется на месте</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Отзывы / Нам доверяют -->
+    <section class="trust-section">
+      <div class="container">
+        <h2 class="section-title">НАМ ДОВЕРЯЮТ НА ДОРОГАХ</h2>
+
+        <div class="trust-stats">
+          <div class="t-stat">
+            <span class="t-val">8</span>
+            <span class="t-lbl">лет на дорогах</span>
+          </div>
+          <div class="t-stat">
+            <span class="t-val">12 400+</span>
+            <span class="t-lbl">выездов выполнено</span>
+          </div>
+          <div class="t-stat">
+            <span class="t-val">14</span>
+            <span class="t-lbl">машин в парке</span>
+          </div>
+          <div class="t-stat">
+            <span class="t-val">10-15 мин</span>
+            <span class="t-lbl">средний приезд</span>
+          </div>
+        </div>
+
+        <div class="reviews-list">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="avatar-circle">А</div>
+              <div class="review-author">
+                <strong>Алексей М.</strong>
+                <span>Трасса М-7, заглох в мороз -25</span>
+              </div>
+            </div>
+            <p class="review-text">«В -25 машина встала на междугородней трассе. Приехали через 18 минут с мотором-отогревателем. Завели быстро и аккуратно. Оплатил картой. Рекомендую!»</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="avatar-circle">О</div>
+              <div class="review-author">
+                <strong>Олег В.</strong>
+                <span>Ваш Город, Центральный район</span>
+              </div>
+            </div>
+            <p class="review-text">«Вечером у торгового центра влетел в яму и пробил боковину, а запаски с собой не было. Вызвал парней, приехали минут за 15. Прямо на месте поставили латку и подкачали. Честно, выручили очень оперативно, спасибо!»</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="avatar-circle">Д</div>
+              <div class="review-author">
+                <strong>Дмитрий К.</strong>
+                <span>Платная ОБЛАСТЬ, суппорт</span>
+              </div>
+            </div>
+            <p class="review-text">«Ночью на скоростной трассе заклинило направляющую суппорта, колесо грелось и машина не ехала. Думал всё, эвакуатор за космические деньги. Позвонил в техпомощь, приехал парень на фургоне, на месте всё разобрал и разработал. По цене вышло ровно как сказали по телефону.»</p>
+          </div>
+        </div>
+
+        <p class="cold-scenario-note">
+          <svg class="cold-note-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="20" y1="12" x2="4" y2="12"/><line x1="17.66" y1="6.34" x2="6.34" y2="17.66"/><line x1="17.66" y1="17.66" x2="6.34" y2="6.34"/></svg> -25 и машина не заводится — это к нам ежедневно с декабря по февраль.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9. Финальный блок звонка -->
+    <section class="final-call-section">
+      <div class="container final-call-container">
+        <h2 class="final-title">ТРЕБУЕТСЯ СРОЧНАЯ ПОМОЩЬ?</h2>
+        <a href="tel:+70000000000" class="final-phone-link">+7 (000) 000-00-00</a>
+        
+        <a href="tel:+70000000000" class="btn btn-primary btn-final">ПОЗВОНИТЬ МЕХАНИКУ</a>
+        
+        <div class="live-time-indicator">
+          <span class="live-dot"></span>
+          <span>работаем прямо сейчас, <strong id="liveClock">--:--</strong></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Подвал -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AutoHelp24</strong>
+        <p>Круглосуточный выездной автосервис и техпомощь</p>
+        <p>Режим работы: круглосуточно, 24/7, без выходных</p>
+      </div>
+      <div class="footer-col">
+        <strong>Телефоны:</strong>
+        <p><a href="tel:+70000000000">+7 (000) 000-00-00</a> (основной, бесплатный)</p>
+        <p><a href="tel:+79000000000">+7 (900) 000-00-00</a> (дежурный)</p>
+      </div>
+      <div class="footer-col">
+        <strong>Адрес и регион:</strong>
+        <p>г. Ваш Город, ул. Центральная, 1</p>
+        <p>Ваш город и вся область, трассы М-7, ОБЛАСТЬ</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=9"></script>
+</body>
+</html>
